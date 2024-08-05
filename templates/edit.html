@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Image</title>
+</head>
+<body>
+    <h1>Edit Image</h1>
+    <form action="/apply_filter" method="post">
+        <select name="filter">
+            <option value="sepia">Sepia</option>
+            <option value="black_and_white">Black and White</option>
+            <option value="vintage">Vintage</option>
+            <option value="dramatic">Dramatic</option>
+            <option value="teal_and_orange">Teal & Orange</option>
+            <option value="cross_process">Cross Process</option>
+            <option value="contrast">Contrast</option>
+        </select>
+        <input type="submit" value="Apply Filter">
+    </form>
+    <br>
+    <a href="/show_image" target="_blank">Show Edited Image</a>
+    <br><br>
+    <a href="/reset">Reset Image</a>
+</body>
+</html>
